@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Future of Work Retreat — Mid-Career Reinvention in the Age of AI | Pondicherry</title>
-<meta name="description" content="A curated weekend retreat in Pondicherry for experienced professionals to step back, think deeply, and design their next chapter in an AI-enabled world." />
+<title>Future of Work Retreat — Pause. Reflect. Explore. | Pondicherry</title>
+<meta name="description" content="A weekend retreat in Pondicherry for experienced professionals to step away from the noise, explore AI and the future of work, and reconnect with their own thinking." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -81,9 +81,9 @@
   /* ---------- HERO ---------- */
   .hero { position: relative; padding: 96px 0 80px; overflow: hidden; }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
-  .hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.1rem); letter-spacing: -0.025em; }
+  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: -0.025em; }
   .hero h1 em { font-style: italic; color: var(--accent-deep); }
-  .hero .lede { margin-top: 24px; font-size: 1.12rem; color: var(--ink-soft); max-width: 30em; }
+  .hero .lede { margin-top: 24px; font-size: 1.12rem; color: var(--ink-soft); max-width: 31em; }
   .hero .meta { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
   .pill {
     display: inline-flex; align-items: center; gap: 8px;
@@ -101,7 +101,6 @@
   .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent-deep); }
 
-  /* hero visual — beach scene in SVG */
   .hero-visual { position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 4/5; }
   .hero-visual svg { width: 100%; height: 100%; display: block; }
   .hero-visual .tag {
@@ -110,7 +109,6 @@
     padding: 10px 16px; border-radius: 12px; font-size: 0.8rem; font-weight: 500; color: var(--ink-soft);
   }
 
-  /* soft decorative blobs */
   .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.5; z-index: -1; }
   .blob.a { width: 420px; height: 420px; background: #ecdfc8; top: -120px; right: -80px; }
   .blob.b { width: 360px; height: 360px; background: #dfe7e3; bottom: -140px; left: -120px; }
@@ -122,28 +120,27 @@
 
   /* ---------- SECTION SHELL ---------- */
   section { padding: 84px 0; }
-  .section-head { max-width: 40em; margin-bottom: 48px; }
+  .section-head { max-width: 42em; margin-bottom: 48px; }
   .section-head h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); margin-top: 14px; }
   .section-head p { margin-top: 16px; color: var(--ink-soft); font-size: 1.05rem; }
 
-  /* ---------- PURPOSE ---------- */
-  .purpose { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .questions { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin: 36px 0; }
+  /* ---------- INVITATION ---------- */
+  .invitation { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .invite-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start; }
+  .invite-lead p { font-size: 1.15rem; color: var(--ink); }
+  .invite-lead .stack { font-family: 'Fraunces', serif; font-size: 1.35rem; line-height: 1.55; color: var(--ink-soft); margin-top: 18px; }
+  .invite-lead .stack span { color: var(--ink); }
+  .questions { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .q-card {
     background: var(--sand-50); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 24px; font-family: 'Fraunces', serif; font-size: 1.08rem; color: var(--ink);
-    transition: transform .25s, box-shadow .25s; position: relative;
+    padding: 20px; font-family: 'Fraunces', serif; font-size: 1.02rem; color: var(--ink);
+    transition: transform .25s, box-shadow .25s;
   }
-  .q-card::before { content: ""; display: block; width: 26px; height: 2px; background: var(--accent); margin-bottom: 16px; }
+  .q-card::before { content: ""; display: block; width: 24px; height: 2px; background: var(--accent); margin-bottom: 14px; }
   .q-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-  .nots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
-  .not {
-    border: 1px dashed var(--sand-300); border-radius: var(--radius); padding: 22px; text-align: center;
-    font-size: 0.95rem; color: var(--ink-soft);
-  }
-  .not strong { display: block; font-family: 'Fraunces', serif; color: var(--ink); font-size: 1.05rem; margin-bottom: 4px; }
-  .not.affirm { border-style: solid; border-color: var(--accent); background: linear-gradient(180deg, #fff, var(--sand-50)); }
-  @media (max-width: 720px) { .nots { grid-template-columns: 1fr; } }
+  .invite-foot { margin-top: 40px; font-family: 'Fraunces', serif; font-style: italic; font-size: 1.25rem; color: var(--ink); }
+  @media (max-width: 880px) { .invite-grid { grid-template-columns: 1fr; gap: 36px; } }
+  @media (max-width: 520px) { .questions { grid-template-columns: 1fr; } }
 
   /* ---------- WHO ---------- */
   .who-grid { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -152,11 +149,11 @@
     padding: 12px 22px; font-size: 0.95rem; font-weight: 500; transition: all .2s;
   }
   .who-tag:hover { border-color: var(--accent); color: var(--accent-deep); transform: translateY(-2px); }
-  .who-note { margin-top: 28px; font-size: 1rem; color: var(--ink-soft); }
-  .who-note strong { color: var(--ink); }
+  .who-note { margin-top: 30px; font-size: 1.05rem; color: var(--ink-soft); max-width: 36em; }
+  .who-note strong { color: var(--ink); font-weight: 600; }
 
-  /* ---------- JOURNEY / TIMELINE ---------- */
-  .journey { background: var(--white); border-top: 1px solid var(--line); }
+  /* ---------- WEEKEND / TIMELINE ---------- */
+  .weekend { background: var(--white); border-top: 1px solid var(--line); }
   .timeline { position: relative; margin-top: 20px; }
   .timeline::before {
     content: ""; position: absolute; left: 19px; top: 8px; bottom: 8px; width: 2px;
@@ -170,7 +167,6 @@
   }
   .stop > .node::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
   .stop .day { font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-deep); }
-  .stop .phase { font-family: 'Fraunces', serif; font-size: 0.96rem; color: var(--ink-faint); font-style: italic; }
 
   details.session {
     margin: 14px 0; background: var(--sand-50); border: 1px solid var(--line); border-radius: var(--radius);
@@ -184,25 +180,19 @@
   details.session summary::-webkit-details-marker { display: none; }
   .sess-title { font-family: 'Fraunces', serif; font-size: 1.22rem; }
   .sess-time { font-size: 0.82rem; color: var(--ink-faint); margin-top: 4px; font-weight: 500; }
-  .sess-format { display: inline-block; margin-top: 8px; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); }
+  .sess-tag { display: inline-block; margin-top: 8px; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); }
   .chev { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; transition: transform .25s, background .2s; color: var(--ink-soft); }
   details.session[open] .chev { transform: rotate(45deg); background: var(--accent); color: #fff; border-color: var(--accent); }
   .sess-body { padding: 0 24px 26px; }
-  .sess-body .part { margin-top: 18px; }
-  .sess-body .part h5 { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-deep); margin-bottom: 8px; }
+  .sess-body > p { color: var(--ink-soft); font-size: 0.98rem; max-width: 46em; }
+  .sess-body .sub { margin-top: 16px; }
+  .sess-body .sub h5 { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-deep); margin-bottom: 8px; }
   .sess-body ul { list-style: none; display: grid; gap: 7px; }
   .sess-body li { position: relative; padding-left: 20px; color: var(--ink-soft); font-size: 0.96rem; }
   .sess-body li::before { content: ""; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--sand-400); }
-  .outcome { margin-top: 18px; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--sand-100); border-radius: 0 12px 12px 0; font-size: 0.95rem; color: var(--ink); }
-  .outcome b { font-family: 'Fraunces', serif; font-weight: 600; }
-
-  .canvas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 16px; }
-  .canvas-cell { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-  .canvas-cell .lbl { font-family: 'Fraunces', serif; font-size: 1.02rem; color: var(--accent-deep); margin-bottom: 4px; }
-  .canvas-cell p { font-size: 0.9rem; color: var(--ink-soft); }
-  @media (max-width: 560px) { .canvas-grid { grid-template-columns: 1fr; } }
-
-  .choices { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .quiet { margin-top: 18px; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--sand-100); border-radius: 0 12px 12px 0; font-size: 0.96rem; color: var(--ink); }
+  .quiet b { font-family: 'Fraunces', serif; font-weight: 600; }
+  .choices { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
   .choices span { background: #fff; border: 1px solid var(--line); border-radius: 100px; padding: 7px 16px; font-size: 0.88rem; color: var(--ink-soft); }
 
   /* ---------- TAKEAWAYS ---------- */
@@ -216,30 +206,30 @@
   .take h4 { font-size: 1.08rem; }
   .take p { font-size: 0.9rem; color: var(--ink-soft); margin-top: 4px; }
 
-  /* ---------- DIFFERENCE ---------- */
-  .difference { background: var(--white); border-top: 1px solid var(--line); }
-  .venn { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 36px 0; }
-  .venn-card { text-align: center; padding: 30px 22px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--sand-50); }
-  .venn-card .ico { font-size: 1.6rem; }
-  .venn-card h4 { margin: 12px 0 6px; font-size: 1.15rem; }
-  .venn-card p { font-size: 0.9rem; color: var(--ink-soft); }
-  @media (max-width: 720px) { .venn { grid-template-columns: 1fr; } }
-  .diff-statement { font-family: 'Fraunces', serif; font-size: clamp(1.3rem, 3vw, 1.9rem); line-height: 1.4; max-width: 24em; color: var(--ink); }
-  .diff-statement em { font-style: italic; color: var(--accent-deep); }
+  /* ---------- WHY PONDICHERRY ---------- */
+  .pondy { background: var(--white); border-top: 1px solid var(--line); }
+  .pondy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .pondy-grid p { color: var(--ink-soft); font-size: 1.05rem; }
+  .pondy-grid p + p { margin-top: 16px; }
+  .pondy-grid .accent-line { font-family: 'Fraunces', serif; font-style: italic; font-size: 1.3rem; color: var(--ink); margin-top: 20px; }
+  .pondy-visual { border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 5/4; }
+  .pondy-visual svg { width: 100%; height: 100%; display: block; }
+  @media (max-width: 880px) { .pondy-grid { grid-template-columns: 1fr; gap: 36px; } }
 
   /* ---------- CLOSING / CTA ---------- */
   .closing { position: relative; background: var(--ink); color: var(--sand-100); border-radius: 28px; margin: 40px auto 0; padding: 72px 40px; overflow: hidden; text-align: center; }
-  .closing .kicker { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(2rem, 5vw, 3.2rem); color: #fff; letter-spacing: 0.02em; }
-  .closing p { margin: 22px auto 0; max-width: 32em; color: rgba(244, 238, 227, 0.8); font-size: 1.08rem; }
-  .closing .btn-primary { background: var(--sand-50); color: var(--ink); margin-top: 36px; display: inline-block; }
+  .closing .lead { max-width: 34em; margin: 0 auto; color: rgba(244, 238, 227, 0.82); font-size: 1.08rem; }
+  .closing .lead + .lead { margin-top: 14px; }
+  .closing .kicker { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(2rem, 5vw, 3.2rem); color: #fff; letter-spacing: 0.02em; margin-top: 30px; }
+  .closing .btn-primary { background: var(--sand-50); color: var(--ink); margin-top: 34px; display: inline-block; }
   .closing .btn-primary:hover { background: var(--accent); color: #fff; }
+  .closing .note { margin-top: 16px; font-size: 0.85rem; color: rgba(244,238,227,0.6); }
   .closing .glow { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(176,138,90,0.4), transparent 70%); top: -200px; left: 50%; transform: translateX(-50%); }
 
   /* ---------- FOOTER ---------- */
   footer { padding: 50px 0 60px; text-align: center; color: var(--ink-faint); font-size: 0.88rem; }
   footer .brand { display: block; margin-bottom: 10px; color: var(--ink); }
 
-  /* reveal on scroll */
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
 
@@ -259,13 +249,13 @@
   <div class="wrap nav-inner">
     <div class="brand">Future of Work <span>Retreat</span></div>
     <nav class="nav-links">
-      <a href="#purpose">Purpose</a>
-      <a href="#who">Who</a>
-      <a href="#journey">Journey</a>
+      <a href="#invitation">The Invitation</a>
+      <a href="#who">Who It's For</a>
+      <a href="#weekend">The Weekend</a>
       <a href="#takeaways">Takeaways</a>
-      <a href="#difference">Why Different</a>
+      <a href="#pondicherry">Why Pondicherry</a>
     </nav>
-    <a href="#reserve" class="nav-cta">Reserve a Seat</a>
+    <a href="#reserve" class="nav-cta">Request an Invitation</a>
   </div>
 </header>
 
@@ -273,22 +263,21 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="reveal">
-      <span class="eyebrow">Pondicherry · Friday Evening – Sunday Noon</span>
-      <h1>Mid-Career <em>Reinvention</em> in the Age of AI</h1>
-      <p class="lede">A curated weekend to step back from the noise, think deeply, and design your next decade of work — on the quiet sands of Pondicherry.</p>
+      <span class="eyebrow">Pondicherry · Friday Evening – Sunday Morning</span>
+      <h1>Pause. Reflect. <em>Explore.</em></h1>
+      <p class="lede">A weekend to step away from the noise of everyday work — to think, explore, and connect with a small group of thoughtful professionals, on the quiet shores of Pondicherry.</p>
       <div class="meta">
-        <span class="pill"><span class="dot"></span> 10+ years experience</span>
-        <span class="pill"><span class="dot"></span> Small cohort</span>
-        <span class="pill"><span class="dot"></span> 4 guided sessions</span>
+        <span class="pill"><span class="dot"></span> 10+ years of experience</span>
+        <span class="pill"><span class="dot"></span> A small group</span>
+        <span class="pill"><span class="dot"></span> Friday eve – Sunday morning</span>
       </div>
       <div class="hero-actions">
-        <a href="#reserve" class="btn btn-primary">Reserve a Seat</a>
-        <a href="#journey" class="btn btn-ghost">See the Journey</a>
+        <a href="#reserve" class="btn btn-primary">Request an Invitation</a>
+        <a href="#weekend" class="btn btn-ghost">See the Weekend</a>
       </div>
     </div>
 
     <div class="hero-visual reveal">
-      <!-- Pondicherry beach scene, muted sand palette -->
       <svg viewBox="0 0 480 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calm Pondicherry beach at golden hour">
         <defs>
           <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -311,12 +300,10 @@
         </defs>
         <rect width="480" height="600" fill="url(#sky)"/>
         <circle cx="330" cy="150" r="60" fill="url(#sun)" opacity="0.9"/>
-        <!-- distant birds -->
         <g stroke="#b6a487" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6">
           <path d="M90 120 q8 -8 16 0 q8 -8 16 0"/>
           <path d="M140 100 q6 -6 12 0 q6 -6 12 0"/>
         </g>
-        <!-- sea -->
         <rect y="300" width="480" height="120" fill="url(#sea)"/>
         <path d="M0 300 q120 14 240 0 t240 0 v8 q-120 14 -240 0 t-240 0z" fill="#c7d1cb" opacity="0.7"/>
         <g stroke="#ffffff" stroke-width="2" opacity="0.5" fill="none">
@@ -324,16 +311,13 @@
           <path d="M260 365 q40 -6 80 0"/>
           <path d="M150 385 q40 -6 80 0"/>
         </g>
-        <!-- wet sand reflection line -->
         <path d="M0 420 q140 -22 240 -4 q120 22 240 4 v180 H0z" fill="url(#sand)"/>
         <path d="M0 420 q140 -22 240 -4 q120 22 240 4" fill="none" stroke="#f3ead9" stroke-width="6" opacity="0.7"/>
-        <!-- sand texture dots -->
         <g fill="#cdb78f" opacity="0.5">
           <circle cx="70" cy="500" r="2"/><circle cx="130" cy="540" r="2.4"/><circle cx="200" cy="510" r="1.8"/>
           <circle cx="300" cy="555" r="2.2"/><circle cx="380" cy="505" r="2"/><circle cx="420" cy="560" r="2.4"/>
           <circle cx="250" cy="575" r="2"/><circle cx="100" cy="575" r="1.8"/><circle cx="350" cy="530" r="1.8"/>
         </g>
-        <!-- footprints -->
         <g fill="#cbb489" opacity="0.7">
           <ellipse cx="180" cy="470" rx="5" ry="9"/>
           <ellipse cx="205" cy="495" rx="5" ry="9"/>
@@ -341,32 +325,34 @@
           <ellipse cx="203" cy="548" rx="5" ry="9"/>
         </g>
       </svg>
-      <span class="tag">The shores of Pondicherry — where reflection begins</span>
+      <span class="tag">The shores of Pondicherry — a different pace of life</span>
     </div>
   </div>
 </section>
 
-<!-- PURPOSE -->
-<section class="purpose" id="purpose">
+<!-- INVITATION -->
+<section class="invitation" id="invitation">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">The Purpose</span>
-      <h2>Most professionals optimize for the next milestone. Very few pause to ask the bigger questions.</h2>
-      <p>The Future of Work Retreat is a structured reinvention experience for professionals navigating one of the largest shifts in the history of work.</p>
+      <span class="eyebrow">An Invitation to Pause</span>
+      <h2>We live in a world optimized for speed. Some questions deserve more than the gaps between meetings.</h2>
     </div>
 
-    <div class="questions reveal">
-      <div class="q-card">What kind of work do I want to do for the next decade?</div>
-      <div class="q-card">Which skills will matter in an AI-enabled world?</div>
-      <div class="q-card">What parts of my career should I double down on?</div>
-      <div class="q-card">What should I leave behind?</div>
-      <div class="q-card">What does success mean to me now?</div>
-    </div>
+    <div class="invite-grid">
+      <div class="invite-lead reveal">
+        <p>More meetings. More notifications. More content. More pressure to keep up.</p>
+        <div class="stack">Yet the questions that shape the next few years of your working life rarely get the attention they deserve. <span>This weekend makes the time.</span></div>
+        <p class="invite-foot">For one weekend, step away — and think.</p>
+      </div>
 
-    <div class="nots reveal">
-      <div class="not"><strong>Not an AI workshop</strong>We don't just teach tools.</div>
-      <div class="not"><strong>Not a wellness retreat</strong>We don't only focus on wellbeing.</div>
-      <div class="not affirm"><strong>A reinvention experience</strong>Step back, think deeply, design your next chapter.</div>
+      <div class="questions reveal">
+        <div class="q-card">How is work changing?</div>
+        <div class="q-card">What role should AI play in my professional life?</div>
+        <div class="q-card">What am I learning? What am I building?</div>
+        <div class="q-card">What do I want more of in the years ahead?</div>
+        <div class="q-card">Am I heading in the direction I truly want?</div>
+        <div class="q-card">What deserves my attention now?</div>
+      </div>
     </div>
   </div>
 </section>
@@ -375,29 +361,28 @@
 <section id="who">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Who Should Attend</span>
-      <h2>Built for experienced professionals at an inflection point.</h2>
+      <span class="eyebrow">Who It's For</span>
+      <h2>Experienced professionals who are simply curious about what comes next.</h2>
+      <p>For people with 10+ years of experience who are drawn to:</p>
     </div>
     <div class="who-grid reveal">
-      <span class="who-tag">Data &amp; Analytics Leaders</span>
-      <span class="who-tag">Technology Professionals</span>
-      <span class="who-tag">Consultants</span>
-      <span class="who-tag">Banking &amp; Financial Services</span>
-      <span class="who-tag">Product Managers</span>
-      <span class="who-tag">Founders &amp; Independent Consultants</span>
-      <span class="who-tag">Professionals planning their next chapter</span>
+      <span class="who-tag">The future of work</span>
+      <span class="who-tag">Artificial Intelligence</span>
+      <span class="who-tag">Career growth &amp; evolution</span>
+      <span class="who-tag">Meaningful professional connections</span>
+      <span class="who-tag">Personal reflection &amp; renewal</span>
     </div>
-    <p class="who-note reveal"><strong>The common thread:</strong> 10+ years of experience and the readiness to think intentionally about what comes next.</p>
+    <p class="who-note reveal"><strong>No technical background required. No prior AI experience necessary.</strong> Only curiosity.</p>
   </div>
 </section>
 
-<!-- JOURNEY -->
-<section class="journey" id="journey">
+<!-- WEEKEND -->
+<section class="weekend" id="weekend">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">The Retreat Journey</span>
-      <h2>A weekend designed to move you from uncertainty to a roadmap.</h2>
-      <p>Four guided sessions, one structured pause, and a cohort of peers. Expand each session to see what unfolds.</p>
+      <span class="eyebrow">The Weekend</span>
+      <h2>A gentle rhythm of conversation, exploration, and quiet.</h2>
+      <p>No presentations. No networking pressure. No workshops. Expand each moment to see what unfolds.</p>
     </div>
 
     <div class="timeline">
@@ -406,34 +391,18 @@
       <div class="stop reveal">
         <div class="node"></div>
         <div class="day">Friday Evening</div>
-        <div class="phase">Context &amp; Connection</div>
         <details class="session" open>
           <summary>
             <div>
-              <div class="sess-title">Session 1 — The Future of Work Reality Check</div>
-              <div class="sess-time">7:30 PM – 9:00 PM</div>
-              <span class="sess-format">Facilitated Discussion</span>
+              <div class="sess-title">Welcome Circle</div>
+              <div class="sess-time">Evening · over dinner</div>
+              <span class="sess-tag">Just Conversation</span>
             </div>
             <div class="chev">+</div>
           </summary>
           <div class="sess-body">
-            <div class="part">
-              <h5>Topics</h5>
-              <ul>
-                <li>What is changing in the world of work?</li>
-                <li>What is AI actually disrupting?</li>
-                <li>Which skills are becoming more valuable?</li>
-                <li>Which skills are becoming commodities?</li>
-              </ul>
-            </div>
-            <div class="part">
-              <h5>Activity — The Reinvention Map</h5>
-              <ul>
-                <li>Anonymously share your biggest professional concern</li>
-                <li>Anonymously share your biggest opportunity</li>
-              </ul>
-            </div>
-            <div class="outcome"><b>Outcome:</b> Move from uncertainty to awareness and begin building trust within the cohort.</div>
+            <p>A relaxed conversation to get to know the group, share what brought us here, and set intentions for the weekend.</p>
+            <div class="quiet"><b>No presentations. No networking pressure. No workshops.</b> Just conversation.</div>
           </div>
         </details>
       </div>
@@ -442,42 +411,27 @@
       <div class="stop reveal">
         <div class="node"></div>
         <div class="day">Saturday Morning</div>
-        <div class="phase">Capability &amp; Leverage</div>
         <details class="session">
           <summary>
             <div>
-              <div class="sess-title">Session 2 — Building Your Personal AI Operating System</div>
-              <div class="sess-time">9:30 AM – 12:30 PM</div>
-              <span class="sess-format">Hands-on Working Session</span>
+              <div class="sess-title">AI &amp; the Future of Work</div>
+              <div class="sess-time">Morning session</div>
+              <span class="sess-tag">Practical &amp; Accessible</span>
             </div>
             <div class="chev">+</div>
           </summary>
           <div class="sess-body">
-            <div class="part">
-              <h5>Part 1 — The Professional Audit</h5>
+            <p>A practical, accessible session — no jargon, no prerequisites.</p>
+            <div class="sub">
+              <h5>We'll explore</h5>
               <ul>
-                <li>Where your time goes</li>
-                <li>What creates value</li>
-                <li>What creates friction</li>
-                <li>What drains energy</li>
+                <li>How AI is changing work</li>
+                <li>Where it can create leverage</li>
+                <li>What remains uniquely human</li>
+                <li>How to build a simple personal AI practice</li>
               </ul>
             </div>
-            <div class="part">
-              <h5>Part 2 — AI Leverage Opportunities</h5>
-              <ul>
-                <li>Tasks to automate</li>
-                <li>Tasks to augment</li>
-                <li>Tasks that remain uniquely human</li>
-              </ul>
-            </div>
-            <div class="part">
-              <h5>Part 3 — Building an AI Operating System</h5>
-              <ul>
-                <li>Research · Learning · Writing</li>
-                <li>Decision Support · Career Development</li>
-              </ul>
-            </div>
-            <div class="outcome"><b>Outcome:</b> Leave with a practical AI effectiveness framework tailored to your role.</div>
+            <div class="quiet">The goal is not to become an AI expert — it is to become a <b>more thoughtful professional</b> in an AI-enabled world.</div>
           </div>
         </details>
       </div>
@@ -486,36 +440,29 @@
       <div class="stop reveal">
         <div class="node"></div>
         <div class="day">Saturday Afternoon</div>
-        <div class="phase">Reflection &amp; Exploration</div>
         <details class="session">
           <summary>
             <div>
-              <div class="sess-title">Structured Pause</div>
-              <div class="sess-time">2:30 PM – 5:30 PM</div>
-              <span class="sess-format">Choose Your Own Experience</span>
+              <div class="sess-title">Explore</div>
+              <div class="sess-time">Afternoon · open</div>
+              <span class="sess-tag">Yours to Spend</span>
             </div>
             <div class="chev">+</div>
           </summary>
           <div class="sess-body">
-            <div class="part">
-              <h5>Choose your experience</h5>
+            <p>Spend the afternoon however feels most valuable. A reflection workbook with optional prompts is provided — to use, or to set aside.</p>
+            <div class="sub">
+              <h5>A few possibilities</h5>
               <div class="choices">
-                <span>Auroville exploration</span>
-                <span>Ashram visit</span>
-                <span>French Quarter walk</span>
-                <span>Beach reflection</span>
-                <span>Deep work session</span>
-                <span>One-on-one conversations</span>
+                <span>Visit Auroville</span>
+                <span>Explore Pondicherry</span>
+                <span>Walk along the beach</span>
+                <span>Read</span>
+                <span>Journal</span>
+                <span>Conversation</span>
+                <span>Simply do nothing</span>
               </div>
             </div>
-            <div class="part">
-              <h5>Reflection Workbook prompts</h5>
-              <ul>
-                <li>Energy · Motivation · Purpose</li>
-                <li>Growth · Reinvention</li>
-              </ul>
-            </div>
-            <div class="outcome"><b>Phones discouraged. Thinking encouraged.</b> Space for ideas to emerge naturally.</div>
           </div>
         </details>
       </div>
@@ -524,44 +471,27 @@
       <div class="stop reveal">
         <div class="node"></div>
         <div class="day">Saturday Evening</div>
-        <div class="phase">Reinvention &amp; Self-Awareness</div>
         <details class="session">
           <summary>
             <div>
-              <div class="sess-title">Session 3 — Designing Your Next Chapter</div>
-              <div class="sess-time">6:30 PM – 8:30 PM</div>
-              <span class="sess-format">Guided Canvas</span>
+              <div class="sess-title">Designing Your Next Chapter</div>
+              <div class="sess-time">Evening session</div>
+              <span class="sess-tag">Guided Reflection</span>
             </div>
             <div class="chev">+</div>
           </summary>
           <div class="sess-body">
-            <div class="part">
-              <h5>Part 1 — Looking Back</h5>
+            <p>A gentle, guided reflection — not an exercise in reinvention, just an honest look at what matters.</p>
+            <div class="sub">
+              <h5>We'll reflect on</h5>
               <ul>
-                <li>What has defined my career?</li>
-                <li>What work has given me energy?</li>
-                <li>What work have I outgrown?</li>
+                <li>What energizes you</li>
+                <li>What matters most</li>
+                <li>What opportunities excite you</li>
+                <li>What you want more — or less — of in the years ahead</li>
               </ul>
             </div>
-            <div class="part">
-              <h5>Part 2 — The Career Transformation Canvas</h5>
-              <div class="canvas-grid">
-                <div class="canvas-cell"><div class="lbl">Let Go</div><p>What should I stop doing?</p></div>
-                <div class="canvas-cell"><div class="lbl">Leverage</div><p>What should I amplify using AI?</p></div>
-                <div class="canvas-cell"><div class="lbl">Strengthen</div><p>Which uniquely human capabilities should I develop?</p></div>
-                <div class="canvas-cell"><div class="lbl">Create</div><p>What future do I want to build?</p></div>
-              </div>
-            </div>
-            <div class="part">
-              <h5>Part 3 — Future Self Exercise (five years out)</h5>
-              <ul>
-                <li>What are you known for?</li>
-                <li>What work are you doing?</li>
-                <li>What skills define you?</li>
-                <li>What kind of life have you created?</li>
-              </ul>
-            </div>
-            <div class="outcome"><b>Outcome:</b> A clear vision of the next chapter.</div>
+            <div class="quiet">You'll capture your thinking in a personal <b>Next Chapter Canvas</b> to take home.</div>
           </div>
         </details>
       </div>
@@ -570,36 +500,17 @@
       <div class="stop reveal">
         <div class="node"></div>
         <div class="day">Sunday Morning</div>
-        <div class="phase">Action &amp; Commitment</div>
         <details class="session">
           <summary>
             <div>
-              <div class="sess-title">Session 4 — The 90-Day Reinvention Blueprint</div>
-              <div class="sess-time">9:00 AM – 11:00 AM</div>
-              <span class="sess-format">Action Planning + Commitment Circle</span>
+              <div class="sess-title">Closing Circle</div>
+              <div class="sess-time">Morning · before departure</div>
+              <span class="sess-tag">Carry It Forward</span>
             </div>
             <div class="chev">+</div>
           </summary>
           <div class="sess-body">
-            <div class="part">
-              <h5>Focus Areas</h5>
-              <div class="canvas-grid">
-                <div class="canvas-cell"><div class="lbl">Learning</div><p>What must I learn?</p></div>
-                <div class="canvas-cell"><div class="lbl">Building</div><p>What project will I create?</p></div>
-                <div class="canvas-cell"><div class="lbl">Visibility</div><p>How will I communicate my new direction?</p></div>
-                <div class="canvas-cell"><div class="lbl">Habits</div><p>What behaviours must change?</p></div>
-              </div>
-            </div>
-            <div class="part">
-              <h5>Commitment Circle</h5>
-              <ul>
-                <li>One major insight</li>
-                <li>One decision</li>
-                <li>One 30-day commitment</li>
-                <li>Paired with an accountability partner from the cohort</li>
-              </ul>
-            </div>
-            <div class="outcome"><b>Outcome:</b> A practical roadmap and a support network.</div>
+            <p>A final conversation to share insights, name one meaningful commitment, and carry the momentum of the weekend back into everyday life.</p>
           </div>
         </details>
       </div>
@@ -612,33 +523,76 @@
 <section id="takeaways">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">What You Leave With</span>
-      <h2>Tangible outputs — and a network that lasts.</h2>
+      <span class="eyebrow">What You'll Leave With</span>
+      <h2>Time well spent — and a few things worth keeping.</h2>
     </div>
     <div class="take-grid reveal">
-      <div class="take"><div class="check">✓</div><div><h4>Personal AI Operating System</h4><p>A framework for how you work with AI every day.</p></div></div>
-      <div class="take"><div class="check">✓</div><div><h4>Career Transformation Canvas</h4><p>What to let go, leverage, strengthen, and create.</p></div></div>
-      <div class="take"><div class="check">✓</div><div><h4>Future Self Vision</h4><p>A clear picture of who you're becoming.</p></div></div>
-      <div class="take"><div class="check">✓</div><div><h4>90-Day Reinvention Blueprint</h4><p>Your roadmap translated into action.</p></div></div>
-      <div class="take"><div class="check">✓</div><div><h4>Accountability Partner</h4><p>A peer to keep you moving after you leave.</p></div></div>
-      <div class="take"><div class="check">✓</div><div><h4>Meaningful Relationships</h4><p>A trusted cohort and greater clarity of direction.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>A practical AI practice</h4><p>A simple, personal way to use AI more effectively in your work.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>Greater clarity</h4><p>A clearer sense of your direction and what you want more of.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>Your Next Chapter Canvas</h4><p>A personal record of your thinking, to revisit long after.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>A reflection workbook</h4><p>Prompts to keep the thinking going on your own terms.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>New relationships</h4><p>A small circle of thoughtful peers worth staying in touch with.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>Time &amp; space well spent</h4><p>The rarest takeaway of all — a weekend you're glad you gave yourself.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- DIFFERENCE -->
-<section class="difference" id="difference">
+<!-- WHY PONDICHERRY -->
+<section class="pondy" id="pondicherry">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">What Makes This Different</span>
-      <h2>At the intersection of technology, career, and identity.</h2>
+    <div class="pondy-grid">
+      <div class="reveal">
+        <span class="eyebrow">Why Pondicherry</span>
+        <h2 style="font-size: clamp(1.8rem, 3.6vw, 2.6rem); margin-top: 14px;">The setting is part of the experience.</h2>
+        <p style="margin-top:18px;">Pondicherry has long attracted people seeking a different pace of life. Its beaches, cafés, architecture, and proximity to Auroville create a place that naturally encourages reflection, conversation, and curiosity.</p>
+        <p>This is not simply where the retreat takes place.</p>
+        <p class="accent-line">It is part of why it works.</p>
+      </div>
+
+      <div class="pondy-visual reveal">
+        <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="French Quarter street and seafront in Pondicherry">
+          <defs>
+            <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f6ede0"/><stop offset="1" stop-color="#efe2cf"/>
+            </linearGradient>
+          </defs>
+          <rect width="500" height="400" fill="url(#psky)"/>
+          <!-- soft sun -->
+          <circle cx="400" cy="90" r="46" fill="#f5e6cd" opacity="0.8"/>
+          <!-- colonial facade -->
+          <rect x="40" y="120" width="180" height="200" fill="#efe6d6" stroke="#d8c6a8" stroke-width="2"/>
+          <rect x="40" y="120" width="180" height="22" fill="#d9b48a" opacity="0.7"/>
+          <g fill="#cdb49a">
+            <rect x="62" y="160" width="34" height="50" rx="3"/>
+            <rect x="116" y="160" width="34" height="50" rx="3"/>
+            <rect x="170" y="160" width="34" height="50" rx="3"/>
+            <rect x="62" y="232" width="34" height="50" rx="3"/>
+            <rect x="116" y="232" width="34" height="50" rx="3"/>
+            <rect x="170" y="232" width="34" height="50" rx="3"/>
+          </g>
+          <!-- arch door -->
+          <path d="M116 320 v-40 a18 18 0 0 1 36 0 v40z" fill="#c79b6a"/>
+          <!-- bougainvillea -->
+          <g fill="#d7a59a" opacity="0.85">
+            <circle cx="232" cy="150" r="7"/><circle cx="244" cy="162" r="6"/><circle cx="228" cy="168" r="5"/>
+            <circle cx="240" cy="178" r="6"/><circle cx="226" cy="186" r="5"/>
+          </g>
+          <!-- street -->
+          <rect y="320" width="500" height="80" fill="#e6d8bf"/>
+          <path d="M0 320 H500" stroke="#d3c0a0" stroke-width="2"/>
+          <!-- lamp post -->
+          <rect x="300" y="210" width="5" height="110" fill="#b9a283"/>
+          <circle cx="302" cy="206" r="9" fill="#f0dca8"/>
+          <!-- two small figures walking -->
+          <g fill="#9c8a72">
+            <circle cx="350" cy="300" r="6"/><rect x="346" y="306" width="8" height="18" rx="3"/>
+            <circle cx="372" cy="304" r="5"/><rect x="369" y="309" width="7" height="15" rx="3"/>
+          </g>
+          <!-- distant sea sliver -->
+          <rect x="430" y="300" width="70" height="20" fill="#cfd8d1" opacity="0.7"/>
+        </svg>
+      </div>
     </div>
-    <div class="venn reveal">
-      <div class="venn-card"><div class="ico">⚙️</div><h4>Technology</h4><p>Most AI events teach tools.</p></div>
-      <div class="venn-card"><div class="ico">🧭</div><h4>Career</h4><p>Most conferences provide information.</p></div>
-      <div class="venn-card"><div class="ico">🌿</div><h4>Identity</h4><p>Most retreats focus only on wellbeing.</p></div>
-    </div>
-    <p class="diff-statement reveal">The objective is not simply to learn about AI. It is to become <em>intentional about who you want to become</em> in an AI-enabled world.</p>
   </div>
 </section>
 
@@ -647,9 +601,11 @@
   <div class="wrap">
     <div class="closing reveal">
       <div class="glow"></div>
-      <div class="kicker">Pause. Reflect. Reinvent.</div>
-      <p>The future of work is not just about technology. It is about designing a future worth working toward.</p>
-      <a href="mailto:sriram.arun@gmail.com?subject=Future%20of%20Work%20Retreat%20—%20Reserve%20a%20Seat" class="btn btn-primary">Reserve a Seat</a>
+      <p class="lead">This retreat is not about predicting the future. It is about creating the space to engage with it thoughtfully — to step away from the noise, reconnect with your own thinking, and return with greater clarity and intention.</p>
+      <div class="kicker">Pause. Reflect. Explore.</div>
+      <p class="lead" style="margin-top:18px;">The future of work begins with making time to think about it.</p>
+      <a href="mailto:sriram.arun@gmail.com?subject=Future%20of%20Work%20Retreat%20—%20Request%20an%20Invitation&body=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20Future%20of%20Work%20Retreat%20in%20Pondicherry." class="btn btn-primary">Request an Invitation</a>
+      <p class="note">Small group · By request · Pondicherry</p>
     </div>
   </div>
 </section>
@@ -657,8 +613,8 @@
 <footer>
   <div class="wrap">
     <span class="brand">Future of Work Retreat</span>
-    Pondicherry · Friday Evening – Sunday Noon
-    <br />© 2026 · Mid-Career Reinvention in the Age of AI
+    Pondicherry · Friday Evening – Sunday Morning
+    <br />© 2026 · Pause. Reflect. Explore.
   </div>
 </footer>
 
@@ -682,7 +638,7 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
-  // accordion: keep one open per timeline at a time (optional, gentle)
+  // accordion: one open at a time
   const all = document.querySelectorAll('details.session');
   all.forEach((d) => d.addEventListener('toggle', () => {
     if (d.open) all.forEach((o) => { if (o !== d) o.open = false; });
