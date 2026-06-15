@@ -63,20 +63,20 @@
     background: rgba(250, 247, 241, 0.82);
     border-bottom: 1px solid var(--line);
   }
-  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; }
-  .brand { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 66px; }
+  .brand { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; }
   .brand span { color: var(--accent-deep); }
-  .nav-links { display: flex; gap: 30px; font-size: 0.86rem; font-weight: 500; color: var(--ink-soft); }
+  .nav-links { display: flex; gap: 22px; font-size: 0.82rem; font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
   .nav-links a { text-decoration: none; transition: color .2s; }
   .nav-links a:hover { color: var(--accent-deep); }
   .nav-cta {
-    text-decoration: none; font-size: 0.84rem; font-weight: 600;
-    padding: 9px 20px; border-radius: 100px;
+    text-decoration: none; font-size: 0.82rem; font-weight: 600; white-space: nowrap;
+    padding: 9px 18px; border-radius: 100px;
     background: var(--ink); color: var(--sand-50);
     transition: transform .2s, background .2s;
   }
   .nav-cta:hover { background: var(--accent-deep); transform: translateY(-1px); }
-  @media (max-width: 820px) { .nav-links { display: none; } }
+  @media (max-width: 980px) { .nav-links { display: none; } }
 
   /* ---------- HERO ---------- */
   .hero { position: relative; padding: 96px 0 80px; overflow: hidden; }
@@ -270,15 +270,13 @@
   <div class="wrap nav-inner">
     <div class="brand">Future of Work <span>Retreat</span></div>
     <nav class="nav-links">
-      <a href="#invitation">The Invitation</a>
+      <a href="#invitation">Invitation</a>
       <a href="#who">Who It's For</a>
       <a href="#weekend">The Weekend</a>
-      <a href="#takeaways">Takeaways</a>
-      <a href="#pondicherry">Why Pondicherry</a>
       <a href="#investment">Investment</a>
-      <a href="#host">Your Host</a>
+      <a href="#host">Host</a>
     </nav>
-    <a href="#reserve" class="nav-cta">Request an Invitation</a>
+    <a href="#reserve" class="nav-cta">Apply to Join</a>
   </div>
 </header>
 
@@ -288,7 +286,7 @@
     <div class="reveal">
       <span class="eyebrow">Pondicherry · Friday Evening – Sunday Morning</span>
       <h1>Pause. Reflect. <em>Explore.</em></h1>
-      <p class="lede">A weekend to step away from the noise of everyday work — to think, explore, and connect with a small group of thoughtful professionals, on the quiet shores of Pondicherry.</p>
+      <p class="lede">A weekend to step away from the noise — to think clearly, and connect with a small group of thoughtful professionals on the quiet shores of Pondicherry.</p>
       <div class="meta">
         <span class="pill"><span class="dot"></span> 10+ years of experience</span>
         <span class="pill"><span class="dot"></span> A small group</span>
@@ -358,16 +356,16 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">An Invitation to Pause</span>
-      <h2>We live in a world optimized for speed. Some questions deserve more than the gaps between meetings.</h2>
-      <p>AI, shifting careers, and changing priorities are prompting many professionals to reconsider how they spend their time — and what they want from the years ahead.</p>
+      <h2>AI can answer almost anything. The one conversation it can't have for you is the one with yourself.</h2>
+      <p>Information is now instant and free. What stays rare is the time to sit with your own thinking — and decide where you're actually headed.</p>
     </div>
 
     <div class="invite-grid">
       <div class="invite-lead reveal">
-        <p>More meetings. More notifications. More content. More pressure to keep up.</p>
-        <div class="stack">Yet the questions that shape the next few years of your working life rarely get the attention they deserve. <span>This weekend makes the time.</span></div>
-        <p style="margin-top:18px; color: var(--ink-soft);">One of the most valuable parts of the weekend is the cohort itself — a small group of experienced professionals bringing different perspectives, questions, and experiences.</p>
-        <p class="invite-foot">For one weekend, step away — and think.</p>
+        <p>More meetings. More notifications. More pressure to keep up.</p>
+        <div class="stack">For one weekend, step away from the noise — to think, and to use AI not just to move faster, but to understand yourself better. <span>This weekend makes the time.</span></div>
+        <p style="margin-top:18px; color: var(--ink-soft);">Much of the value is the cohort itself — a small group of experienced professionals, each bringing a different perspective.</p>
+        <p class="invite-foot">Step away — and think.</p>
       </div>
 
       <div class="questions reveal">
@@ -450,10 +448,10 @@
             <div class="sub">
               <h5>We'll explore</h5>
               <ul>
-                <li>Conduct an audit of where your time and energy goes</li>
-                <li>Identify which tasks to automate, augment, or drop</li>
+                <li>Audit where your time and energy actually go</li>
+                <li>Decide what to automate, augment, or drop</li>
                 <li>Define what remains your uniquely human "moat"</li>
-                <li>Build a simple, personal AI practice — your Personal AI OS</li>
+                <li>Use AI as a thinking partner — a mirror for clearer thinking, not just a shortcut</li>
               </ul>
             </div>
             <div class="quiet">The goal is not to become an AI expert — it is to become a <b>more thoughtful professional</b> in an AI-enabled world.</div>
@@ -552,7 +550,7 @@
       <h2>Time well spent — and a few things worth keeping.</h2>
     </div>
     <div class="take-grid reveal">
-      <div class="take"><div class="check">✓</div><div><h4>A practical AI practice</h4><p>A simple, personal way to use AI more effectively in your work.</p></div></div>
+      <div class="take"><div class="check">✓</div><div><h4>AI as a thinking partner</h4><p>A simple practice for using AI to think more clearly — not just to move faster.</p></div></div>
       <div class="take"><div class="check">✓</div><div><h4>Greater clarity</h4><p>A clearer sense of your direction and what you want more of.</p></div></div>
       <div class="take"><div class="check">✓</div><div><h4>Your Next Chapter Canvas</h4><p>A personal record of your thinking, to revisit long after.</p></div></div>
       <div class="take"><div class="check">✓</div><div><h4>A reflection workbook</h4><p>Prompts to keep the thinking going on your own terms.</p></div></div>
@@ -686,7 +684,7 @@
   <div class="wrap">
     <div class="closing reveal">
       <div class="glow"></div>
-      <p class="lead">This retreat is not about predicting the future. It is about creating the space to engage with it thoughtfully — to step away from the noise, reconnect with your own thinking, and return with greater clarity and intention.</p>
+      <p class="lead">Not about predicting the future — about making the space to think clearly about it, and returning with greater clarity and intention.</p>
       <div class="kicker">Pause. Reflect. Explore.</div>
       <p class="lead" style="margin-top:18px;">The future of work begins with making time to think about it.</p>
       <!-- TODO: replace with your real Tally / Google Form application link -->
